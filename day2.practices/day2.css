@@ -1,0 +1,55 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: antiquewhite;
+}
+
+.container{
+    height: 140px;
+    width: auto;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid;
+
+}
+
+.box{
+    height: 130px;
+    width: 130px;
+    background-color: aquamarine;
+    margin: 2px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.bibek{
+    height: 130px;
+    width: 130px;
+    border: 2px solid;
+    border-radius: 50%;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    width: auto;
+    background-color: aqua;
+
+}
+p{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
