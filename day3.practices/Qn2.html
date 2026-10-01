@@ -1,0 +1,57 @@
+<!-- 4. Create a College Website Navigation
+
+Create a semantic navigation bar for a college website.
+
+The navigation should contain:
+
+Home
+About
+Courses
+Teachers
+Contact
+
+Use <nav> and <ul> properly.
+
+CSS: Display the navigation links horizontally and remove the default bullet points. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nagivation-bar-practices</title>
+    <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            background-color: rgb(125, 172, 201);
+        }
+        .container{
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-around;
+            height: 30px;
+        }
+        .class{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-top: 7px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a id="id" class="class" href="#Home">Home</a>
+            <a id="id1" class="class" href="#about">About</a>
+            <a id="id2" class="class" href="#cources">Cources</a>
+            <a id="id3" class="class" href="#teacher">Teachers</a>
+            <a id="id4" class="class" href="#contacts">Contacts</a>
+        </nav>
+    </header>
+</body>
+</html>

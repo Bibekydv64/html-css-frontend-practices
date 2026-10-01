@@ -1,0 +1,76 @@
+<!-- 6. Create a Semantic Product Page
+
+Create a product page for a laptop.
+
+Use:
+
+<header>
+<main>
+<section>
+<article>
+<footer>
+
+The product should contain:
+
+Laptop name
+Image
+Description
+Price
+Features
+Buy button -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Card</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+            height: 400px;
+            width: 300px;
+            background-color: aqua;
+            border: 1px solid black;
+            border-radius: 20px;
+
+
+        }
+        #img{
+            height: 170px;
+            width: 130px;
+            align-items: center;
+            margin-top: 5px;
+            margin-left: 80px;
+            border-radius: 30px;
+            border: 1px solid black;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 8%;
+        }
+    
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+            <img class="box" id="img" src="image1.png" alt="product-laptop">
+
+            <h2 class="box">Band:Hp Laptop</h2>
+
+            <h3 class="box">Description:</h3>
+
+            <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore velit natus cupiditate reiciendis! Natus in alias reiciendis expedita sunt minima iure a dignissimos.</p>
+
+            <h3 class="box">Price:$400</h3>
+        </div>
+</body>
+</html>
