@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 102, 102);
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 500px;
+    width: 500px;
+}
+
+.black{
+    background-color: black;
+
+}
+
+.white{
+    background-color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
