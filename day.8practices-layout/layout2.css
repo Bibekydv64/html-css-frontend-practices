@@ -1,0 +1,47 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.container{
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 9px;
+}
+
+
+.box{
+    background-color: rgb(106, 63, 145);
+}
+
+.one{
+    grid-row: 1/4; 
+}
+
+.two{
+    grid-column-start:2;
+   grid-column-end: 4; 
+}
+
+
+.four{
+grid-row: 2/4;
+grid-column: 4/5;
+}
+
+
+
+
+
+
+
+
