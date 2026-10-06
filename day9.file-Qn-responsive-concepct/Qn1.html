@@ -1,0 +1,75 @@
+<!-- <!-- 🟢 DAY 1 — Responsive CSS Foundation
+Learn
+Media Queries
+Breakpoints
+Responsive layout thinking
+max-width
+width: 100%
+min-width
+max-width
+overflow
+Responsive images
+Mini Exercises
+
+Exercise 1 — Responsive Box
+Desktop → 500px
+Tablet  → 80%
+Mobile  → 100%
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qn practices</title>
+
+    <style>
+        .container{
+            height: 300px;
+            width: 300px;
+            background-color: antiquewhite;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            background-color: aqua;
+            font-size: large;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width:302px) {
+            .container{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(70, 46, 15);
+            }
+            
+            .box{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            font-size: large;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            }      
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>
