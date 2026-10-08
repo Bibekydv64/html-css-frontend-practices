@@ -1,0 +1,16 @@
+:root{
+    --primarary: black;
+    --secondary: white;
+}
+
+*{
+    margin: 0%;
+    padding: 0px;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+
+

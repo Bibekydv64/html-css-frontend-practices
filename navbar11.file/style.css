@@ -1,0 +1,65 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    height: 100vh;
+    background: #1D2B64; 
+    /* The standard linear gradient from uiGradients */
+    background: linear-gradient(to right, #1D2B64, #F8CDDA); 
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-nav img{
+    height: 40px;
+    border-radius: 50%;
+}
+.first-nav{
+    display: flex;
+}
+.name{
+    margin: 10px;
+    margin-top: 10px;
+    font-size: large;
+    color: #9fa4bb;
+}
+
+.second-nav{
+    margin-top: 10px;
+
+}
+.ancher{
+    margin: 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: larger;
+    color: black;
+}
+.h5{
+    font-size: 15px;
+    font-weight: bold;
+    display: none;
+}
+
+@media screen and (max-width:690px) {
+    .ancher{
+        display: none;
+        background-color: #445493;
+        
+
+    }
+    .h5{
+        display: block;
+    }
+    
+}
+
+
+
+
+
