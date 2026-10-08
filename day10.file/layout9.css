@@ -1,0 +1,49 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+  height: 100vh;
+}
+
+.container{
+    display: flex;
+    max-width: 1250px;
+    height: 75px;
+    background-color: rgb(133, 13, 13);
+}
+
+.box{
+    margin: 5px;
+    font-size: 50px;
+    height: 30px;
+    width: 50px;
+    background-color: aqua;
+}
+.first1{
+    background-color: antiquewhite;
+    height: 30px;
+    width: 100px;
+}
+
+.circle{
+    border-radius: 50%;
+    height: 54px;
+    width: 54px;
+    margin-left: 1190px;
+    margin-bottom: 10px;
+
+}
+.section{
+    background-color: blue;
+}
+
+
+
+
+
+
+
+
+
