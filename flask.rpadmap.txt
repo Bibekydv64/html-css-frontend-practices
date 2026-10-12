@@ -1,0 +1,475 @@
+FLASK MASTERY ROADMAP
+Beginner to Freelance-Ready Backend Developer
+=============================================
+
+16-DAY FIRST SPRINT + DAY 17
+============================
+
+Day 1: GET, POST, request.form, form validation
+Day 2: Jinja2, template inheritance, redirects, flash messages
+
+Day 3: SQL basics and schema design
+
+Day 4: SQLAlchemy CRUD and relationships
+
+Day 5: Registration, password hashing, sessions, roles
+
+Day 6: Email integration overview, error handling, testing basics
+
+Days 7-9: Student Management System
+
+Days 10-11: Inventory Management System
+Days 12-13: Employee roles, email verification, reports
+Days 14-15: E-commerce catalog, cart, orders (initial implementation)
+Day 16: Test, fix, document, and deploy the best-completed project
+Day 17: Prepare freelance profile, portfolio, and client proposals
+
+This sprint is deliberately ambitious. Continue practicing after day 17.
+Do not rush security, testing, or deployment merely to meet the calendar.
+
+
+START HERE — FIRST CHALLENGE
+============================
+Build a student registration form using Flask.
+Requirements:
+1. GET /register displays the form.
+2. POST /register processes name, email, and age.
+3. Missing fields must be rejected.
+4. Age must be a valid positive integer.
+5. Display success or validation errors.
+6. Keep data in memory for now; no database yet.
+7. Test valid, empty, and malformed inputs.
+GOAL
+----
+Build strong Flask and backend fundamentals through ordered topics, exercises,
+mini-projects, freelance-style projects, testing, and deployment.
+
+
+PHASE 1 — FLASK FOUNDATIONS
+===========================
+Topics
+------
+1. Python virtual environment and pip
+2. Flask installation and project structure
+3. Routes and URL rules
+4. Dynamic URL parameters
+5. HTTP methods: GET and POST
+6. Request and response objects
+7. Reading form data with request.form
+8. Jinja2 templates and template inheritance
+9. Static files: CSS, images, JavaScript
+10. Form validation
+11. Redirects and url_for()
+12. Flash messages
+13. Custom error pages and status codes
+
+Mini-projects
+-------------
+A. Contact form
+B. Feedback form with validation
+C. Student registration form (in-memory data only)
+Freelance-style project
+-----------------------
+Restaurant website:
+- Menu page
+- Contact form
+- Reservation request form
+- Server-side validation
+- Success/error messages
+- Responsive HTML/CSS
+- Admin-managed content can be added in a later phase
+
+Exercises
+---------
+1. Build a GET route that displays a form.
+2. Accept POST submissions from the form.
+3. Reject missing fields.
+4. Validate that age is a positive integer.
+5. Display useful validation errors.
+6. Redirect after a successful submission.
+7. Explain why POST does not automatically save data.
+8. Test valid, empty, malformed, and unexpected input.
+Completion standard
+-------------------
+You can explain GET vs POST, handle form input safely, render templates,
+and return the right response without copying a tutorial.
+
+
+
+
+
+
+PHASE 2 — SQL, DATABASES, AND CRUD
+==================================
+
+Topics
+------
+1. SQL: SELECT, INSERT, UPDATE, DELETE
+2. WHERE, ORDER BY, LIMIT
+3. Search and filtering
+4. Tables, columns, data types, constraints
+5. Primary keys and foreign keys
+6. One-to-many relationships
+7. Many-to-many relationships
+8. SQLite for practice; MySQL when needed
+9. SQLAlchemy models and sessions
+10. Database migrations with Flask-Migrate
+11. Database transactions
+12. Safe database queries and parameterization
+
+Mini-projects
+-------------
+A. Student record CRUD
+B. Course and enrollment records
+C. Product CRUD with search and sorting
+
+Freelance-style project
+-----------------------
+Student Management System:
+- Create, view, update, and delete students
+- Courses and enrollments
+- Search, filtering, and pagination
+- Correct primary/foreign-key relationships
+- Validation and clear error messages
+
+Exercises
+---------
+1. Insert, retrieve, update, and delete a student.
+2. Find students matching a condition.
+3. Sort and paginate records.
+4. Create a foreign-key relationship between students and courses.
+5. Write a JOIN to show each student's enrolled courses.
+6. Explain when a transaction is necessary.
+7. Handle a record that does not exist.
+8. Prevent invalid or duplicate data using constraints where appropriate.
+
+Completion standard
+-------------------
+You can design a basic schema, write SQL queries, connect Flask to a database,
+and implement CRUD without mixing every responsibility into one route.
+
+
+PHASE 3 — BUSINESS LOGIC AND DATA RELATIONSHIPS
+===============================================
+
+Topics
+------
+1. Separate routes from business logic
+2. Reusable Python functions
+3. Input validation and normalization
+4. Exception handling
+5. SQL JOINs and aggregate queries
+6. Pagination, filtering, and sorting
+7. Inventory stock calculations
+8. Supplier and product relationships
+9. Stock movement history
+10. Transactions for multi-step operations
+
+Mini-projects
+-------------
+A. Product search
+B. Stock quantity tracker
+C. Low-stock report
+
+Freelance-style project
+-----------------------
+Inventory Management System:
+- Products and categories
+- Suppliers
+- Stock in and stock out
+- Low-stock warnings
+- Search and filtering
+- Sales/stock reports
+- Admin-only management actions
+
+Exercises
+---------
+1. Reject a sale when stock is insufficient.
+2. Prevent stock from becoming negative.
+3. Record each stock movement.
+4. Calculate total stock value.
+5. Find products below a chosen threshold.
+6. Handle missing products and invalid quantities.
+7. Use a transaction for a sale and stock update.
+8. Explain why stock should not be changed only in the browser.
+
+Completion standard
+-------------------
+You can translate business rules into Python and SQL, handle failure cases,
+and keep related database changes consistent.
+
+
+PHASE 4 — AUTHENTICATION AND AUTHORIZATION
+==========================================
+
+Topics
+------
+1. Registration and login
+2. Password hashing and verification
+3. Sessions and cookies
+4. Logout
+5. Protected routes
+6. Authentication vs authorization
+7. Roles: admin, manager, employee, customer
+8. Per-record access checks
+9. CSRF protection with Flask-WTF
+10. Environment variables and secret keys
+11. Login attempt limits and security testing
+
+Mini-projects
+-------------
+A. Login/logout demo
+B. Protected dashboard
+C. Admin vs normal-user permissions
+
+Freelance-style project
+-----------------------
+Employee Management System:
+- Employee records
+- Admin and employee roles
+- Protected pages
+- Attendance records
+- Salary calculations or salary records
+- Search and reporting
+- Authorization checks on the server
+
+Exercises
+---------
+1. Hash a password before storing it.
+2. Verify a password during login.
+3. Protect a dashboard from logged-out users.
+4. Stop an employee from opening an admin route.
+5. Check permissions on the server, not only by hiding buttons.
+6. Keep secret keys out of source control.
+7. Test unauthorized access to another user's record.
+8. Explain the difference between authentication and authorization.
+
+Completion standard
+-------------------
+You can build a basic secure login flow and enforce roles on the server.
+Do not store plain-text passwords.
+
+
+PHASE 5 — EMAIL, OTP, AND ACCOUNT VERIFICATION
+==============================================
+
+Topics
+------
+1. Integrate an SMTP provider or email service
+2. Generate cryptographically secure OTPs
+3. Set an expiry time
+4. Store OTPs safely; avoid plain-text long-lived storage
+5. Verify and invalidate OTPs
+6. Resend cooldowns
+7. Attempt limits and rate limiting
+8. Email verification state
+9. Password reset flow
+10. Avoid exposing whether an account exists unnecessarily
+
+Mini-projects
+-------------
+A. Contact form that sends an email
+B. Email verification demo
+C. Password reset flow
+
+Freelance-style project
+-----------------------
+Registration and Email Verification System:
+- Registration
+- Email verification
+- Expiring OTP
+- Resend cooldown
+- Attempt limits
+- Login and logout
+- Secure password reset
+
+Exercises
+---------
+1. Reject an expired OTP.
+2. Invalidate an OTP after successful verification.
+3. Prevent unlimited OTP guesses.
+4. Add a resend cooldown.
+5. Test invalid, expired, reused, and correct OTPs.
+6. Explain why OTP expiry and attempt limits matter.
+
+Completion standard
+-------------------
+You can implement and test a basic email verification workflow without
+treating an emailed code as permanent or unlimited-access authentication.
+
+
+PHASE 6 — DOMAIN-SPECIFIC BUSINESS APPLICATIONS
+================================================
+
+Shared topics
+-------------
+- Relational data modelling
+- Date and time validation
+- Status transitions
+- Search and filtering
+- Role permissions
+- Reports and summaries
+- Conflict handling
+- Tests for business rules
+
+Practice projects
+-----------------
+A. Hotel reservation system
+   - Rooms, room types, availability, reservations
+   - Prevent overlapping bookings
+   - Reservation status and customer details
+
+B. Gym management system
+   - Members, plans, subscriptions, renewals
+   - Membership status and expiry
+
+C. Real estate listing system
+   - Property cards, listing details, search and filters
+   - Contact/inquiry form and listing management
+
+D. School/college management system
+   - Courses, teachers, students, enrollments
+   - Correct relationships and role-based access
+
+E. Medical clinic appointment system
+   - Doctors, services, appointment slots
+   - Prevent conflicting appointments
+   - Protect sensitive information and restrict access
+
+F. Blog/CMS
+   - Posts, categories, drafts, publishing, comments
+   - Author permissions and admin moderation
+
+Exercises
+---------
+1. Prevent two bookings for the same room at overlapping times.
+2. Prevent a user from changing another user's reservation.
+3. Calculate membership expiry.
+4. Filter properties by price and category.
+5. Show students enrolled in each course.
+6. Prevent overlapping doctor appointments.
+7. Test draft vs published blog posts.
+
+Completion standard
+-------------------
+You can choose a suitable project, model its data, define its business rules,
+and explain how you prevent invalid states.
+
+
+PHASE 7 — PROFESSIONAL FLASK ARCHITECTURE AND APIS
+==================================================
+
+Topics
+------
+1. Blueprints
+2. Application factory pattern
+3. Configuration for development and production
+4. Routes, services, and data-access responsibilities
+5. REST API principles
+6. JSON requests and responses
+7. HTTP status codes and consistent error formats
+8. API authentication and authorization
+9. External API integration
+10. File uploads and file validation
+11. Logging and error handlers
+12. pytest and test fixtures
+13. Test database isolation
+14. Database indexes and query optimization
+
+Mini-projects
+-------------
+A. Refactor an app into Blueprints
+B. Build a JSON CRUD API
+C. Consume an external API
+D. Write tests for success and failure cases
+
+Freelance-style project
+-----------------------
+Multi-user Blog/CMS or Business Dashboard:
+- Modular code
+- Role-based permissions
+- CRUD and search APIs
+- Validation and error handling
+- Automated tests
+- Clear setup documentation
+
+Exercises
+---------
+1. Move route business logic into a service function.
+2. Return appropriate HTTP status codes.
+3. Test a missing resource and invalid payload.
+4. Test an unauthorized request.
+5. Mock an external API failure.
+6. Explain why test data must be isolated from real data.
+7. Find and improve an inefficient database query.
+
+Completion standard
+-------------------
+You can maintain a modular Flask app, build a predictable API, and test it.
+
+
+PHASE 8 — INTERMEDIATE E-COMMERCE CAPSTONE
+==========================================
+
+Core features
+-------------
+1. Product and category catalog
+2. Product details and image handling
+3. Search, filtering, sorting, pagination
+4. Customer registration and login
+5. Persistent shopping cart
+6. Server-side price and quantity validation
+7. Checkout validation
+8. Order and order-item tables
+9. Stock validation and consistency
+10. Customer order history
+11. Admin product and order management
+12. Order status workflow
+13. Payment-provider sandbox integration
+14. Tests for key workflows
+15. Production configuration and deployment
+
+Suggested database entities
+---------------------------
+- User
+- Product
+- Category
+- Cart / CartItem (or session cart initially)
+- Order
+- OrderItem
+- PaymentAttempt (if implementing payment integration)
+
+Exercises
+---------
+1. Do not trust a price sent by the browser; calculate it on the server.
+2. Reject invalid quantities and unavailable stock.
+3. Ensure an order and its stock updates remain consistent.
+4. Stop customers from viewing other customers' orders.
+5. Prevent ordinary users from accessing admin functions.
+6. Test empty carts, deleted products, and stock changes during checkout.
+7. Use a payment sandbox; never store raw card details.
+8. Document setup, configuration, tests, and deployment.
+
+Completion standard
+-------------------
+A working, tested, documented, deployed application with a clear demo.
+Only describe features that have actually been implemented and tested.
+
+
+
+FREELANCE READINESS CHECKLIST
+=============================
+
+[ ] I can explain the code I wrote.
+[ ] I can build CRUD without copying a tutorial.
+[ ] I can design tables and relationships.
+[ ] I validate data on the server.
+[ ] I handle errors and missing records.
+[ ] I implement authentication and server-side permissions.
+[ ] I protect secrets and passwords.
+[ ] I test normal, invalid, and unauthorized cases.
+[ ] I can deploy and troubleshoot a basic app.
+[ ] I use Git and provide a useful README.
+[ ] I can explain project scope, limitations, and setup to a client.
+[ ] I do not claim unfinished or untested features.
+
