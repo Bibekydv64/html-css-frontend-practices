@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practic</title>
+</head>
+<body style="background-color: black; color: whitesmoke;">
+    <h1>Welcome!,{{name}}</h1>
+    {% if marks >= 80 %}
+        <p>mark:{{ marks }}</p>
+        <p>Grade:Excelent</p>
+    {% elif marks >= 40 and marks <= 80 %}
+        <p>marks:{{ marks }}</p>
+        <p>Grade:Good</p>
+    {% else %}
+        <p>marks:{{marks}}</p>
+        <p>Grade: nikal sale kuta fir fail hoga</p>
+    {% endif %}
+
+
+</body>
+</html>
